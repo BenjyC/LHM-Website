@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Montserrat&display=swap');
+
+/* FULL HTML CONTENT */
+body, html, header, .view {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+  }
+  
+html {
+    font-size: 20px;
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 740px) {
+    html,
+    body,
+    header,
+    .view {
+      height: 100vh;
+    }
+
+    .landerText, .hr-light{
+        display:none;
+    }
+}
+.view {
+    background-image: url('../images/background.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: contain; 
+    background-position: center top;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+
+/* NAVBAR */
+.navbar-brand {
+    font-family: 'Great Vibes', cursive;
+}
+
+/* MAIN CONTENT */
+.landerText {
+    color: white;
+    font-family: 'Great Vibes', cursive;
+    font-size: 5rem;
+}
+  
+.hr-light {
+    border-top: 2px solid #fff;
+    width: 200px;
+}

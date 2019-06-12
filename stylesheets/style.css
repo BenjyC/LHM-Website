@@ -83,6 +83,12 @@ header .overlay {
 .navbar {
     /*background-color: rgb(149, 183, 255);*/
 }
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-around;
+}
+
 .navbar-brand {
     font-family: 'Great Vibes', cursive;
 }
@@ -91,7 +97,7 @@ header .overlay {
 .landerText {
     color: white;
     font-family: 'Great Vibes', cursive;
-    font-size: 5rem;
+    font-size: 6rem;
 }
   
 .hr-light {

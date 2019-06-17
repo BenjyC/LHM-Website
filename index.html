@@ -25,7 +25,7 @@
 						<a class="nav-link" href="#gallery"> Photos </a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#"> Contact </a>
+						<a class="nav-link" href="#contact"> Contact </a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#"> Follow </a>
@@ -48,21 +48,6 @@
 					</div>
 				</div>
 			</div>
-			<!-- <div class="overlay"></div>
-
-			<div class="video-wrap">
-				<video src="media/Website_Background.mov" autoplay="true" loop="true" muted="muted"></video>
-				
-				<div class="video-text">
-					<div class="w-100">
-						<p class="landerText mb-0 font-weight-bold wow fadeInDown" data-wow-delay="0.3s"><strong> Lale Harika </strong></p>
-						<hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.6s">
-						<p class="landerText mb-4 wow fadeInDown" data-wow-delay="0.4s"><strong> Music </strong></p>
-					</div>
-				</div>
-			</div> -->
-			
-			
 		</header>
 
 		<div class="divider" id="divide1"></div>
@@ -125,12 +110,32 @@
 				</div>
 			</div>
 		</section>
+		
+		<div class="divider" id="divide2"></div>
 
 		<section id="contact">
 
+			<div class="container">
+				<div class="row justify-content-end" id="contactRow">
+					<div class="col-lg-6">
+						<div class="jumbotron">
+							<h1 class="text-white"> Get in touch </h1>
+							<form method="POST" enctype="text/plain" action="form-handler.php">
+								<label for="fname"> First Name </label>
+								<input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+								<label for="lname"> Last Name </label>
+								<input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+								<label for="mail"> Email </label>
+								<input type="text" id="mail" name="email" placeholder="Your email address.."><br>
+								<label for="message"> Message </label>
+								<textarea id="message" name="message" placeholder="Write your message.."></textarea><br>
+								<input type="submit" value="Submit">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
-		
-		<div class="divider" id="divide2"></div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>

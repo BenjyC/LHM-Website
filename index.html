@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title> Lale Harika Music </title>
+		<title> LHM </title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -25,7 +25,7 @@
 						<a class="nav-link" href="#gallery"> Photos </a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#"> Contact </a>
+						<a class="nav-link" href="#contact"> Contact </a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#"> Follow </a>
@@ -34,10 +34,13 @@
 			</div>
 		</nav>
 		<header>
+			<!-- Overlay mask for video -->
 			<div class="overlay"></div>
+
 			<video src="media/Website_Background.mov" autoplay="true" loop="true" muted="muted"></video>
+
 			<div class="container h-100" id="videoContainer">
-				<div class="video-wrap">
+				<div class="video-text">
 					<div class="w-100">
 						<p class="landerText mb-0 font-weight-bold wow fadeInDown" data-wow-delay="0.3s"><strong> Lale Harika </strong></p>
 						<hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.6s">
@@ -106,38 +109,33 @@
 					</div>
 				</div>
 			</div>
-			<!-- <div class="container photoContainer">
-				<div class="row" id="photos">
-					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-						<a target="_blank" href="media/gallery/img6.JPG">
-							<img src="media/gallery/img6.JPG" alt="Lale Harika">
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-						<a target="_blank" href="media/gallery/img7.jpg">
-							<img src="media/gallery/img7.jpg" alt="Lale Harika">
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-						<a target="_blank" href="media/gallery/img8.jpg">
-							<img src="media/gallery/img8.jpg" alt="Lale Harika">
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-						<a target="_blank" href="media/gallery/img9.jpg">
-							<img src="media/gallery/img9.jpg" alt="Lale Harika">
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-						<a target="_blank" href="media/gallery/img10.jpg">
-							<img src="media/gallery/img10.jpg" alt="Lale Harika">
-						</a>
-					</div>
-				</div>
-			</div> -->
 		</section>
 		
 		<div class="divider" id="divide2"></div>
+
+		<section id="contact">
+
+			<div class="container">
+				<div class="row justify-content-end" id="contactRow">
+					<div class="col-lg-6">
+						<div class="jumbotron">
+							<h1 class="text-white"> Get in touch </h1>
+							<form method="POST" enctype="text/plain" action="form-handler.php">
+								<label for="fname"> First Name </label>
+								<input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+								<label for="lname"> Last Name </label>
+								<input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+								<label for="mail"> Email </label>
+								<input type="text" id="mail" name="email" placeholder="Your email address.."><br>
+								<label for="message"> Message </label>
+								<textarea id="message" name="message" placeholder="Write your message.."></textarea><br>
+								<input type="submit" value="Submit">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>

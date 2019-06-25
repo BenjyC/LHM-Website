@@ -18,25 +18,27 @@ html {
 
 header {
     position: relative;
-    height: 90vh;
+    height: 100vh;
     min-height: 25rem;
     width: 100%;
     overflow: hidden;
 }
 
-@media (max-width: 740px) {
+@media (max-width: 760px) {
     html,
     body,
     header {
       height: 100vh;
     }
 
-    .landerText, .hr-light{
+    .dropdown-menu li {
+        padding-bottom: 20px;
     }
-    
+
     .jumbotron {
         margin: 10px;
     }
+
 }
 
 .divider {
@@ -87,13 +89,17 @@ header .video-text {
 
 /* NAVBAR */
 .navbar {
-    background-image: linear-gradient(rgb(255, 92, 92), rgb(199, 119, 119))
-    /* background-color: rgb(199, 119, 119); */
+    background-image: linear-gradient(black, transparent)
 }
 
 .navbar-brand {
     font-family: 'Great Vibes', cursive;
 }
+
+.nav-item { 
+    padding-left: 40px;
+}
+
 
 /* MAIN CONTENT */
 .landerText {
@@ -126,6 +132,10 @@ div#photos img {
     flex-wrap:wrap;
 }
 
+#photoHeading {
+    margin: 50px 0px;
+}
+
 /* Contact Page */
 #contact {
     background-image: url('../media/background.jpg'); 
@@ -149,3 +159,28 @@ input[type=text], textarea {
     box-shadow: 0px 1px 10px rgb(99, 99, 99);
 }
 
+/* Follow Dropdown */
+.dropdown-menu {
+    background-color: rgb(167, 167, 167);
+    min-width: 160px;
+    border: none;
+}
+
+.dropdown-menu li {
+    margin: 8px 2px;
+}
+
+.dropdown-links {
+    color: white;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+.dropdown-links:hover {
+    color:black;
+    text-decoration: none;
+}
+
+.fa {
+    padding-left: 5px;
+}

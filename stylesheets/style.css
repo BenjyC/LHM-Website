@@ -1,27 +1,78 @@
-@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Tangerine|Montserrat&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
 /* FULL HTML CONTENT */
-body, html, header, .view {
-    height: 100%;
+body, html {
     font-family: 'Montserrat', sans-serif;
-    background-color: black;
-  }
+    background-color: white;
+    
+    
+}
   
 html {
     font-size: 20px;
     scroll-behavior: smooth;
 }
 
+/* HEADER */
 header {
+    background-image: url("../media/gallery/img6.jpg");
+    background-size: cover; 
+    text-align: center;
+    height: 75vh;
+    margin-bottom: 20px;
+}
+
+#main-div {
+    z-index: 2;
     position: relative;
-    height: 100vh;
-    min-height: 25rem;
+}
+
+header .main-text-div {
+    display: flex;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    font-family: 'Tangerine', cursive;
+}
+
+.header-overlay {
+    background-color: black;
+    opacity: 0.7;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: inherit;
     width: 100%;
-    overflow: hidden;
+}
+
+.header-text {
+    font-size: 4rem;
+    color: white;
+}
+
+.hr-light {
+    width: 300px;
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+.fab {
+    font-size: 50px;
+    color: white;
+}
+
+.fab:hover {
+    color:grey;
+}
+
+.fa-facebook-square {
+    padding-right: 40px;
+    padding-left: 40px;
 }
 
 @media (max-width: 760px) {
@@ -31,169 +82,57 @@ header {
       height: 100vh;
     }
 
-    .dropdown-menu li {
-        padding-bottom: 20px;
-        padding-left: 30px;
-    }
-
-    .dropdown-menu {
-        width: 230px;
-    }
-
-    .jumbotron {
-        margin: 10px;
-    }
-
-    .hr-light {
-        display: none;
+    #introText {
+        height: inherit;
     }
 
 }
-
-.divider {
-    height: 25px;
-    background-color: rgb(199, 119, 119);
-    box-shadow: 0px 1px 10px rgb(99, 99, 99);
-}
-
-#divide1 {
-    margin-bottom: 20px;
-}
-
-#divide2 {
-    margin-top: 20px;
-}
-
-/* Header Video CSS */
-header .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    opacity: 0.7;
-    z-index: 1;
-}
-
-header video {
-    object-fit: cover;
-    filter: grayscale(100%);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-}
-
-header #videoContainer {
-    position: relative;
-    z-index: 2;
-}
-
-header .video-text {
-    display: flex;
-    height: 100%;
-    text-align: center;
-    align-items: center;
-}
-
-/* NAVBAR */
-.navbar {
-    background-image: linear-gradient(black, transparent)
-}
-
-.navbar-brand {
-    font-family: 'Great Vibes', cursive;
-}
-
-.nav-item { 
-    padding-left: 40px;
-}
-
 
 /* MAIN CONTENT */
-.landerText {
-    color: white;
-    font-family: 'Great Vibes', cursive;
-    font-size: 6em;
+
+#mainContentContainer {
+    text-align: center;
 }
 
-.w-100 {
-    font-size: 1rem;
-}
-  
-.hr-light {
-    border-top: 2px solid #fff;
-    width: 200px;
-}
-
-.landerText, .hr-light {
+.main-text, .hr-light {
     text-shadow: 5px 5px 8px black;
 }
 
-/* Photo Gallery */
-div#photos img {
-    width:100%;
-    height:auto;
-}
-
-#gallery {
-    text-align: center;
-}
-
 .row {
-    display:flex;
-    flex-wrap:wrap;
-}
-
-#photoHeading {
-    margin: 50px 0px;
-}
-
-/* Contact Page */
-#contact {
-    background-image: url('../media/background.jpg'); 
-    background-repeat: no-repeat; 
-    object-fit: contain; 
-    background-position: center top;
-    height: 100vh;
-    display: flex;
+    margin-bottom: 40px;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center; 
 }
 
-input[type=text], textarea {
-    width: 100%;
-    margin-bottom: 16px;
-}
-
-.jumbotron {
-    background-color: rgb(199, 119, 119);
+#row1, #row3 {
+    background-image: linear-gradient(rgb(175, 175, 175), rgb(255, 255, 255));
     padding-top: 20px;
-    box-shadow: 0px 1px 10px rgb(99, 99, 99);
+    padding-bottom: 20px;
 }
 
-/* Follow Dropdown */
-.dropdown-menu {
-    background-color: rgb(167, 167, 167);
-    min-width: 160px;
-    border: none;
+#row3 {
+    margin-bottom: 0px;
 }
 
-.dropdown-menu li {
-    margin: 8px 2px;
-}
-
-.dropdown-links {
+.card-img-overlay {
     color: white;
-    padding-left: 10px;
-    text-decoration: none;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
 }
 
-.dropdown-links:hover {
-    color:black;
-    text-decoration: none;
+.card-dark-overlay {
+    background-color: black;
+    opacity: 0.6;
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
 
-.fa {
-    padding-left: 5px;
+video {
+    filter: grayscale();
 }
+
+

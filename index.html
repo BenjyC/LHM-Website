@@ -5,143 +5,89 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
 		<link rel="stylesheet" href="stylesheets/animate.css">
 		<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+		<link rel="icon" href="favicon.ico">
 
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-md navbar-dark fixed-top">
-			<a class="navbar-brand" href="#"> LHM </a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNav">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<div class="collapse navbar-collapse" id="collapsibleNav">
-				<ul class="nav navbar-nav">
-					<!--<li class="nav-item">
-						<a class="nav-link" href="#"> Music </a>
-					</li>-->
-					<li class="nav-item">
-						<a class="nav-link" href="#gallery"> Photos </a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#contact"> Contact </a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"> Follow <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a class="dropdown-links" href="https://www.youtube.com/channel/UC2BqhyKio5qEtJeBct8AYFQ" target="_blank"> YouTube <i class="fa fa-youtube"></i></a></li>
-							<li><a class="dropdown-links" href="https://www.facebook.com/LaleHarikaMusic" target="_blank"> Facebook <i class="fa fa-facebook-square"></i></a></li>
-							<li><a class="dropdown-links" href="https://www.instagram.com/laleharika/" target="_blank"> Instagram <i class="fa fa-instagram"></i></a></li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-		</nav>
 		<header>
-			<!-- Overlay mask for video -->
-			<div class="overlay"></div>
+			<div class="header-overlay"></div>
 
-			<video src="media/Website_Background.mov" autoplay="true" loop="true" muted="muted"></video>
-
-			<div class="container h-100" id="videoContainer">
-				<div class="video-text">
-					<div class="w-100">
-						<p class="landerText mb-0 font-weight-bold wow fadeInDown" data-wow-delay="0.3s"><strong> Lale Harika </strong></p>
-						<hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.6s">
-						<p class="landerText mb-4 wow fadeInDown" data-wow-delay="0.4s"><strong> Music </strong></p>
+			<div class="container h-100" id="main-div">
+				<div class="main-text-div">
+					<div class="w-100" id="main-text">
+						<h2 class="header-text mb-0 wow fadeInDown" data-wow-delay="0.3s"> Lale Harika Music </h2>
+						<hr class="hr-light wow fadeIn" data-wow-delay="0.3s">
+						<a class="wow fadeIn" data-wow-delay="0.3s" href="https://www.youtube.com/channel/UC2BqhyKio5qEtJeBct8AYFQ" target="_blank"><i class="fab fa-youtube"></i></a>
+						<a class="wow fadeIn" data-wow-delay="0.3s" href="https://www.facebook.com/LaleHarikaMusic" target="_blank"><i class="fab fa-facebook-square"></i></a>
+						<a class="wow fadeIn" data-wow-delay="0.3s" href="https://www.instagram.com/laleharika/" target="_blank"><i class="fab fa-instagram"></i></a>
 					</div>
 				</div>
 			</div>
 		</header>
 
-		<div class="divider" id="divide1"></div>
+		<main>
+			<div class="container" id="introText">
+				<p style="font-size: 40px; text-align: center;"> My name is Lale. <br> I'm a singer songwriter from Dublin who loves to play and perform originals and covers! </p>
+			</div>
 
-		<!-- Main content below landing area -->
-		<section id="gallery">
-			<h1 class="text-white" id="photoHeading"> Photos </h1>
-			<div class="container photoContainer">
-				<div class="row" id="photos">
-					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-						<a target="_blank" href="media/gallery/img1.JPG">
-							<img src="media/gallery/img1.JPG" alt="Lale Harika">
-						</a>
+			<div class="container-fluid" id="mainContentContainer">
+				<div class="row" id="row1">
+					<div class="col-lg-5">
+						<h1> YouTube </h1>
+						<p> Subscribe to our YouTube channel and watch our latest videos. </p>
+
+						<div class="g-ytsubscribe custom-override" data-channelid="UC2BqhyKio5qEtJeBct8AYFQ" data-layout="full" data-count="hidden"></div>
+
 					</div>
-					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-						<a target="_blank" href="media/gallery/img2.jpg">
-							<img src="media/gallery/img2.jpg" alt="Lale Harika">
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-						<a target="_blank" href="media/gallery/img3.jpg">
-							<img src="media/gallery/img3.jpg" alt="Lale Harika">
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-						<a target="_blank" href="media/gallery/img4.jpg">
-							<img src="media/gallery/img4.jpg" alt="Lale Harika">
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-						<a target="_blank" href="media/gallery/img5.jpg">
-							<img src="media/gallery/img5.jpg" alt="Lale Harika">
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-						<a target="_blank" href="media/gallery/img6.JPG">
-							<img src="media/gallery/img6.JPG" alt="Lale Harika">
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-						<a target="_blank" href="media/gallery/img7.jpg">
-							<img src="media/gallery/img7.jpg" alt="Lale Harika">
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-						<a target="_blank" href="media/gallery/img8.jpg">
-							<img src="media/gallery/img8.jpg" alt="Lale Harika">
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-						<a target="_blank" href="media/gallery/img9.jpg">
-							<img src="media/gallery/img9.jpg" alt="Lale Harika">
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-						<a target="_blank" href="media/gallery/img10.jpg">
-							<img src="media/gallery/img10.jpg" alt="Lale Harika">
-						</a>
+					<div class="col-lg-5">
+						<div class="card">
+							<video class="card-img" src="media/Website_Background.mov" autoplay="true" loop="true" muted="muted"></video>
+							<div class="card-dark-overlay"></div>
+							<div class="card-img-overlay">
+								<h2 class="card-title"> Channel Views </h2>
+								<p class="card-text"> 10,027 </p>
+							</div>
+						</div>	
 					</div>
 				</div>
-			</div>
-		</section>
-		
-		<div class="divider" id="divide2"></div>
 
-		<section id="contact">
+				<div class="row" id="row2">
+					<div class="col-lg-5">
+						<div class="card">
+							<img class="card-img" src="media/gallery/img5.jpg" alt="Lale Harika">
+							<div class="card-dark-overlay"></div>
+							<div class="card-img-overlay">
+								<h1> Follow the page </h1>
+							</div>
+						</div>	
+					</div>
+					<div class="col-lg-5">
+						<h1> Facebook </h1>
+						<p> Follow our Facebook page to catch the latest updates & news. </p>
+					</div>
+				</div>
 
-			<div class="container">
-				<div class="row justify-content-end" id="contactRow">
-					<div class="col-lg-6">
-						<div class="jumbotron">
-							<h1 class="text-white"> Get in touch </h1>
-							<form method="POST" enctype="text/plain" data-netlify="true" name="contactForm">
-								<label for="fname"> First Name </label>
-								<input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
-								<label for="lname"> Last Name </label>
-								<input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
-								<label for="mail"> Email </label>
-								<input type="text" id="mail" name="email" placeholder="Your email address.."><br>
-								<label for="message"> Message </label>
-								<textarea id="message" name="message" placeholder="Write your message.."></textarea><br>
-								<input type="submit" value="Submit">
-							</form>
+				<div class="row" id="row3">
+					<div class="col-lg-5">
+						<h1> Instagram </h1>
+						<p> Follow Lale's Instagram for a look into her daily life. </p>
+					</div>
+					<div class="col-lg-5">
+						<div class="card">
+							<img class="card-img" src="media/instaCard.JPG" alt="Lale Harika">
+							<div class="card-dark-overlay"></div>
+							<div class="card-img-overlay">
+								<h1> Day to day </h1>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
+		</main>
+
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -149,6 +95,7 @@
 		<script src="js/wow.min.js"></script>
 		<script src="js/main.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<script src="https://apis.google.com/js/platform.js"></script>
 		
 	</body>
 </html>

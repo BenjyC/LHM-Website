@@ -1,101 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title> LHM </title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
-		<link rel="stylesheet" href="stylesheets/animate.css">
-		<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
-		<link rel="icon" href="favicon.ico">
+  <head>
+    <title>LHM</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+    />
+    <link rel="stylesheet" href="stylesheets/animate.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <div class="header-overlay"></div>
 
-	</head>
-	<body>
-		<header>
-			<div class="header-overlay"></div>
+      <div class="container h-100" id="main-div">
+        <div class="main-text-div">
+          <div class="w-100" id="main-text">
+            <h2 class="header-text mb-0 wow fadeInDown" data-wow-delay="0.3s">
+              Lale Harika Music
+            </h2>
+            <hr class="hr-light wow fadeIn" data-wow-delay="0.3s" />
+            <a
+              class="wow fadeIn"
+              data-wow-delay="0.3s"
+              href="https://www.youtube.com/channel/UC2BqhyKio5qEtJeBct8AYFQ"
+              target="_blank"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a
+              class="wow fadeIn"
+              data-wow-delay="0.3s"
+              href="https://www.facebook.com/LaleHarikaMusic"
+              target="_blank"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
+            <a
+              class="wow fadeIn"
+              data-wow-delay="0.3s"
+              href="https://www.instagram.com/laleharika/"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </header>
 
-			<div class="container h-100" id="main-div">
-				<div class="main-text-div">
-					<div class="w-100" id="main-text">
-						<h2 class="header-text mb-0 wow fadeInDown" data-wow-delay="0.3s"> Lale Harika Music </h2>
-						<hr class="hr-light wow fadeIn" data-wow-delay="0.3s">
-						<a class="wow fadeIn" data-wow-delay="0.3s" href="https://www.youtube.com/channel/UC2BqhyKio5qEtJeBct8AYFQ" target="_blank"><i class="fab fa-youtube"></i></a>
-						<a class="wow fadeIn" data-wow-delay="0.3s" href="https://www.facebook.com/LaleHarikaMusic" target="_blank"><i class="fab fa-facebook-square"></i></a>
-						<a class="wow fadeIn" data-wow-delay="0.3s" href="https://www.instagram.com/laleharika/" target="_blank"><i class="fab fa-instagram"></i></a>
-					</div>
-				</div>
-			</div>
-		</header>
+    <main>
+      <!-- <div class="container" id="introText">
+        <p style="font-size: 40px; text-align: center;"></p>
+      </div> -->
 
-		<main>
-			<div class="container" id="introText">
-				<p style="font-size: 40px; text-align: center;"> My name is Lale. <br> I'm a singer songwriter from Dublin who loves to play and perform originals and covers! </p>
-			</div>
+      <div class="container-fluid" id="mainContentContainer">
+        <div class="row" id="row1">
+          <div class="col-lg-5">
+            <h1>YouTube</h1>
+            <p>Subscribe to our YouTube channel and watch our latest videos.</p>
 
-			<div class="container-fluid" id="mainContentContainer">
-				<div class="row" id="row1">
-					<div class="col-lg-5">
-						<h1> YouTube </h1>
-						<p> Subscribe to our YouTube channel and watch our latest videos. </p>
+            <div
+              class="g-ytsubscribe custom-override"
+              data-channelid="UC2BqhyKio5qEtJeBct8AYFQ"
+              data-layout="full"
+              data-count="hidden"
+            ></div>
+          </div>
+          <div class="col-lg-5">
+            <div class="card">
+              <video
+                class="card-img"
+                src="media/Website_Background.mov"
+                autoplay="true"
+                loop="true"
+                muted="muted"
+              ></video>
+              <div class="card-dark-overlay"></div>
+              <div class="card-img-overlay">
+                <h2 class="card-title">Channel Views</h2>
+                <p class="card-text">10,027</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-						<div class="g-ytsubscribe custom-override" data-channelid="UC2BqhyKio5qEtJeBct8AYFQ" data-layout="full" data-count="hidden"></div>
+        <div class="row" id="row2">
+          <div class="col-lg-5">
+            <div class="card">
+              <img
+                class="card-img"
+                src="media/gallery/img5.jpg"
+                alt="Lale Harika"
+              />
+              <div class="card-dark-overlay"></div>
+              <div class="card-img-overlay">
+                <h1>Follow the page</h1>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <h1>Facebook</h1>
+            <p>Follow our Facebook page to catch the latest updates & news.</p>
+          </div>
+        </div>
 
-					</div>
-					<div class="col-lg-5">
-						<div class="card">
-							<video class="card-img" src="media/Website_Background.mov" autoplay="true" loop="true" muted="muted"></video>
-							<div class="card-dark-overlay"></div>
-							<div class="card-img-overlay">
-								<h2 class="card-title"> Channel Views </h2>
-								<p class="card-text"> 10,027 </p>
-							</div>
-						</div>	
-					</div>
-				</div>
+        <div class="row" id="row3">
+          <div class="col-lg-5">
+            <h1>Instagram</h1>
+            <p>Follow Lale's Instagram for a look into her daily life.</p>
+          </div>
+          <div class="col-lg-5">
+            <div class="card">
+              <img
+                class="card-img"
+                src="media/instaCard.JPG"
+                alt="Lale Harika"
+              />
+              <div class="card-dark-overlay"></div>
+              <div class="card-img-overlay">
+                <h1>Day to day</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
-				<div class="row" id="row2">
-					<div class="col-lg-5">
-						<div class="card">
-							<img class="card-img" src="media/gallery/img5.jpg" alt="Lale Harika">
-							<div class="card-dark-overlay"></div>
-							<div class="card-img-overlay">
-								<h1> Follow the page </h1>
-							</div>
-						</div>	
-					</div>
-					<div class="col-lg-5">
-						<h1> Facebook </h1>
-						<p> Follow our Facebook page to catch the latest updates & news. </p>
-					</div>
-				</div>
-
-				<div class="row" id="row3">
-					<div class="col-lg-5">
-						<h1> Instagram </h1>
-						<p> Follow Lale's Instagram for a look into her daily life. </p>
-					</div>
-					<div class="col-lg-5">
-						<div class="card">
-							<img class="card-img" src="media/instaCard.JPG" alt="Lale Harika">
-							<div class="card-dark-overlay"></div>
-							<div class="card-img-overlay">
-								<h1> Day to day </h1>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</main>
-
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-		<script src="js/wow.min.js"></script>
-		<script src="js/main.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-		<script src="https://apis.google.com/js/platform.js"></script>
-		
-	</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js"></script>
+  </body>
 </html>

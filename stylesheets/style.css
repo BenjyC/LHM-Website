@@ -8,7 +8,9 @@
 body,
 html {
   font-family: "Montserrat", sans-serif;
-  background-color: rgb(29, 29, 29);
+  /*background-color: rgb(216, 216, 216);*/
+  background-color: rgb(90, 90, 90);
+  background-image: url("../media/WoodBackground1.jpg");
 }
 
 html {
@@ -22,11 +24,24 @@ header {
   background-size: cover;
   text-align: center;
   height: 100vh;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0px 20px 20px rgb(0, 0, 0);
 }
 
-/* #introText {
-  height: 25vh;
+/* #headerFade {
+  z-index: 99;
+  position: relative;
+  bottom: 0%;
+  width: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.700717787114846) 32%,
+    rgba(0, 0, 0, 0.9444152661064426) 57%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  height: 500px;
+  margin-bottom: 20px;
 } */
 
 #main-div {
@@ -56,6 +71,7 @@ header .main-text-div {
 .header-text {
   font-size: 5rem;
   color: white;
+  text-shadow: 2px 2px 8px black;
 }
 
 .hr-light {
@@ -96,26 +112,30 @@ header .main-text-div {
   text-align: center;
 }
 
-.main-text,
-.hr-light {
-  text-shadow: 5px 5px 8px black;
-}
-
 .row {
   margin-bottom: 40px;
   justify-content: space-around;
   align-items: center;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.row {
+  background-size: contain;
 }
 
 #row1,
+#row2,
 #row3 {
-  /*background-image: linear-gradient(rgb(175, 175, 175), rgb(255, 255, 255));*/
+  /* background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.8015581232492998) 0%,
+    rgba(181, 179, 179, 1) 35%,
+    rgba(43, 39, 39, 1) 100%
+  ); 
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.75);*/
   padding-top: 20px;
   padding-bottom: 20px;
-}
-
-#row3 {
-  margin-bottom: 0px;
 }
 
 .col-lg-5 {

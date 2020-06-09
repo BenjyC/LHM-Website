@@ -16,18 +16,44 @@ html {
   scroll-behavior: smooth;
 }
 
+/* NAV */ 
+.nav {
+  z-index: 5;
+}
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: rgb(204, 204, 204);
+}
+
+@media (min-width: 992px){
+  .navbar li {
+      margin-left : 1em;
+      margin-right : 1em;
+  }
+}
+
 /* HEADER */
 header {
   background-image: url("../media/gallery/img6.jpg");
   background-size: cover;
   text-align: center;
   height: 100vh;
-  margin-bottom: 20px;
+  position: relative;
 }
 
-/* #introText {
-  height: 25vh;
-} */
+.header-overlay {
+  background-color: black;
+  opacity: 0.7;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: inherit;
+  width: 100%;
+}
 
 #main-div {
   z-index: 2;
@@ -42,30 +68,12 @@ header .main-text-div {
   font-family: "Tangerine", cursive;
 }
 
-.header-overlay {
-  background-color: black;
-  opacity: 0.7;
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: inherit;
-  width: 100%;
-}
-
 .header-text {
   font-size: 5rem;
   color: white;
 }
 
-.hr-light {
-  width: 300px;
-  background-color: white;
-  margin-bottom: 30px;
-}
-
 .fab {
-  font-size: 50px;
   color: white;
 }
 
@@ -73,20 +81,12 @@ header .main-text-div {
   color: grey;
 }
 
-.fa-facebook-square {
-  padding-right: 40px;
-  padding-left: 40px;
-}
 
 @media (max-width: 760px) {
   html,
   body,
   header {
     height: 100vh;
-  }
-
-  #introText {
-    height: inherit;
   }
 }
 
@@ -101,28 +101,7 @@ header .main-text-div {
   text-shadow: 5px 5px 8px black;
 }
 
-.row {
-  margin-bottom: 40px;
-  justify-content: space-around;
-  align-items: center;
-}
-
-#row1,
-#row3 {
-  /*background-image: linear-gradient(rgb(175, 175, 175), rgb(255, 255, 255));*/
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-#row3 {
-  margin-bottom: 0px;
-}
-
-.col-lg-5 {
-  color: white;
-}
-
-.card-img-overlay {
+/* .card-img-overlay {
   color: white;
   display: flex;
   height: 100%;
@@ -137,7 +116,7 @@ header .main-text-div {
   position: absolute;
   height: 100%;
   width: 100%;
-}
+} */
 
 video {
   filter: grayscale();
